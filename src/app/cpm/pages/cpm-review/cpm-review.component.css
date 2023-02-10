@@ -1,0 +1,35 @@
+.btn-print{
+    background-color: #787878;
+    color: #fff;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+}
+.btn-area {
+    width: 70%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.btn-area .btn-success{
+    float: right;;
+}
+.review-field-group{
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+}
+.review-field-group .value{
+    width: 40%;
+    background-color: #f6fbf6;
+    text-align: start;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+.review-field-group .lbl{
+    width: 30%;
+    background-color: #f9f9f9;
+    text-align: start;
+    padding: 10px 30px;
+}

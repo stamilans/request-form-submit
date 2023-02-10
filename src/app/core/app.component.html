@@ -1,0 +1,27 @@
+<div class="app-wrapper">
+  <header class="header">
+    <div class="nav-primary">
+      <div class="container">
+        <div class="logo">
+          <img alt="TD Canada Trust" src="assets/images/logo.png" (click)="home()">
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div role="main" class="contentarea Site-content">
+    
+    <div class="router">
+      <router-outlet></router-outlet>
+    </div>
+    <router-outlet name="popup"></router-outlet>
+  </div>
+
+  <footer>
+      <div>-</div>
+  </footer>
+</div>
+
+
+
+

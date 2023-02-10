@@ -1,0 +1,154 @@
+<h1>CPM Deal Structure Tracker</h1>
+<br>
+<div class="container">
+    <div class="no-style" style="margin-left: 4px">
+        <form [formGroup]="cpmForm" #formDir="ngForm">
+
+            <div class="form-group">
+                <label for="creditLink">Creditlink</label>
+                <input type="text" name="creditLink" class="form-control" formControlName="creditLink" required>
+                <div *ngIf="creditLink.invalid && (creditLink.dirty || creditLink.touched)" class="alert alert-danger">
+                    <div *ngIf="creditLink.errors?.['required']">
+                        Creditlink is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="acf2id">ACF2 ID</label>
+                <input type="text" name="acf2id" class="form-control" formControlName="acf2id" required>
+                <div *ngIf="acf2id.invalid && (acf2id.dirty || acf2id.touched)" class="alert alert-danger">
+                    <div *ngIf="acf2id.errors?.['required']">
+                        ACF2 ID is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Role</label>
+
+                <select id="role" class="form-control" formControlName="role" required>
+                    <option *ngFor="let option of cpmConfig.roleList" [value]="option.value">{{option.label}}</option>
+                </select>
+
+                <div *ngIf="role.invalid && (role.dirty || role.touched)" class="alert alert-danger">
+                    <div *ngIf="role.errors?.['required']">
+                        Role is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bmabm">BM/ABM ACF2 ID</label>
+                <input type="text" name="bmabm" class="form-control" formControlName="bmabm" required>
+                <div *ngIf="bmabm.invalid && (bmabm.dirty || bmabm.touched)" class="alert alert-danger">
+                    <div *ngIf="bmabm.errors?.['required']">
+                        BM/ABM ACF2 ID is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="transitNumber">Transit #</label>
+                <input type="text" name="transitNumber" class="form-control" formControlName="transitNumber" required>
+                <div *ngIf="transitNumber.invalid && (transitNumber.dirty || transitNumber.touched)"
+                    class="alert alert-danger">
+                    <div *ngIf="transitNumber.errors?.['required']">
+                        Transit # is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="region">Region</label>
+                <select id="region" class="form-control" formControlName="region" required>
+                    <option *ngFor="let option of cpmConfig.regionList" [value]="option.value">{{option.label}}</option>
+                </select>
+                <div *ngIf="region.invalid && (region.dirty || region.touched)" class="alert alert-danger">
+                    <div *ngIf="region.errors?.['required']">
+                        Region is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="volume">Volume</label>
+                <input type="text" name="volume" class="form-control" formControlName="volume" required>
+                <div *ngIf="volume.invalid && (volume.dirty || volume.touched)" class="alert alert-danger">
+                    <div *ngIf="volume.errors?.['required']">
+                        Volume is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="customerContact">Customer Contact Number</label>
+                <input type="text" name="customerContact" class="form-control" formControlName="customerContact"
+                    required>
+                <div *ngIf="customerContact.invalid && (customerContact.dirty || customerContact.touched)"
+                    class="alert alert-danger">
+                    <div *ngIf="customerContact.errors?.['required']">
+                        Customer Contact Number is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="commentsSubmission">Have you entered your submission comments using the Credit comments
+                    template</label>
+                    <select id="commentsSubmission" class="form-control" formControlName="commentsSubmission" required>
+                        <option *ngFor="let option of cpmConfig.commentsSubmissionList" [value]="option.value">{{option.label}}</option>
+                    </select>
+                <div *ngIf="commentsSubmission.invalid && (commentsSubmission.dirty || commentsSubmission.touched)"
+                    class="alert alert-danger">
+                    <div *ngIf="commentsSubmission.errors?.['required']">
+                        This field is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="lcdCompleted">LCT Completed/Attempted</label>
+                <select id="lcdCompleted" class="form-control" formControlName="lcdCompleted" required>
+                    <option *ngFor="let option of cpmConfig.lcdCompletedList" [value]="option.value">{{option.label}}</option>
+                </select>
+                <div *ngIf="lcdCompleted.invalid && (lcdCompleted.dirty || lcdCompleted.touched)"
+                    class="alert alert-danger">
+                    <div *ngIf="lcdCompleted.errors?.['required']">
+                        LCT Completed/Attempted is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="requestTopic">Request Topic</label>
+                <select id="requestTopic" class="form-control" formControlName="requestTopic" required>
+                    <option *ngFor="let option of cpmConfig.requestTopicList" [value]="option.value">{{option.label}}</option>
+                </select>
+                <div *ngIf="requestTopic.invalid && (requestTopic.dirty || requestTopic.touched)"
+                    class="alert alert-danger">
+                    <div *ngIf="requestTopic.errors?.['required']">
+                        Request Topic is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea type="text" name="notes" class="form-control" formControlName="notes" required></textarea>
+                <div *ngIf="notes.invalid && (notes.dirty || notes.touched)" class="alert alert-danger">
+                    <div *ngIf="notes.errors?.['required']">
+                        Notes is required.
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        
+        <div class="btn-area">
+            <button type="submit" class="btn btn-success" [disabled]="cpmForm.invalid"
+                (click)="review()">Review</button>
+            <button type="submit" class="btn btn-cancel" (click)="formDir.resetForm({})">Reset</button>
+        </div>
+    </div>
+</div>

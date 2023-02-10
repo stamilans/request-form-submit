@@ -1,0 +1,72 @@
+<h1>CPM Deal Structure Tracker</h1>
+<br>
+<div class="container">
+    <div class="no-style" style="margin-left: 4px">
+            <h2>Review and Print</h2>
+            <div class="review-field-group">
+                <div class="lbl">Creditlink </div>
+                <div class="value">{{cpmRequestInfo.creditLink}}</div>
+            </div>
+
+            <div class="review-field-group">
+                <div class="lbl">ACF2 ID </div>
+                <div class="value">{{cpmRequestInfo.acf2id}}</div>
+            </div>
+
+            <div class="review-field-group">
+                <div class="lbl">Role </div>
+                <div class="value">{{cpmRequestInfo.role}}</div>
+            </div>
+
+            <div class="review-field-group">
+                <div class="lbl">BM/ABM ACF2 ID </div>
+                <div class="value">{{cpmRequestInfo.bmabm}}</div>
+            </div>
+            <div class="review-field-group">
+                <div class="lbl">Transit # </div>
+                <div class="value">{{cpmRequestInfo.transitNumber}}</div>
+            </div>
+            <div class="review-field-group">
+                <div class="lbl">Region </div>
+                <div class="value">{{cpmRequestInfo.region}}</div>
+            </div>
+
+            <div class="review-field-group">
+                <div class="lbl">Volume </div>
+                <div class="value">{{cpmRequestInfo.volume}}</div>
+            </div>
+
+            <div class="review-field-group">
+                <div class="lbl">Customer Contact Number </div>
+                <div class="value">{{cpmRequestInfo.customerContact}}</div>
+            </div>
+
+            <div class="review-field-group">
+                <div class="lbl">Have you entered your submission comments using the Credit comments
+                    template</div>
+                <div class="value">{{cpmRequestInfo.commentsSubmission}}</div>
+            </div>
+
+            <div class="review-field-group">
+                <div class="lbl">LCT Completed/Attempted </div>
+                <div class="value">{{cpmRequestInfo.lcdCompleted}}</div>
+            </div>
+            <div class="review-field-group">
+                <div class="lbl">Request Topic </div>
+                <div class="value">{{cpmRequestInfo.requestTopic}}</div>
+            </div>
+
+            <div class="review-field-group">
+                <div class="lbl">Notes </div>
+                <div class="value">{{cpmRequestInfo.notes}}</div>
+            </div>
+            
+
+        <div class="btn-area">
+            
+            <button type="submit" class="btn btn-print" (click)="back()">Back</button>
+            <button type="submit" class="btn btn-success" 
+                (click)="submit()">Submit</button>
+        </div>
+    </div>
+</div>

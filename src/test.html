@@ -1,0 +1,9 @@
+<div class="form-group">
+    <label for="notes">Notes</label>
+    <input type="text" name="notes" class="form-control" formControlName="notes" required>
+    <div *ngIf="notes.invalid && (notes.dirty || notes.touched)" class="alert alert-danger">
+        <div *ngIf="notes.errors?.['required']">
+            Notes is required.
+        </div>
+    </div>
+</div>

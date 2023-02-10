@@ -1,0 +1,78 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 999;
+}
+
+header .green-bar {
+  background-color: #038203;
+  height: 20px;
+}
+
+.nav-primary {
+  position: relative;
+  width: 100vw;
+  height: 70px;
+  background-color: #fff;
+  border-top: 10px solid #008a00;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .container {
+  height: 100%;
+}
+
+.logo {
+  left: 15px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -21px;
+  display: flex;
+  align-content: center;
+  align-items: baseline;
+  width: 49px;
+  height: 43px;
+}
+
+.logo img {
+  width: 49px;
+  height: 43px;
+  height: 43px;
+}
+
+.contentarea {
+  flex: 1 0 auto;
+  margin-top: 70px;
+  overflow: scroll;
+  display: block;
+  padding: .5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.router{
+  width: 80%;
+}
+
+footer {
+  background-color: #12422b;
+  color: #fff;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: 0;
+}
+
+.container {
+  padding: .5rem;
+  max-width: 1000px;
+  margin: auto;
+}
