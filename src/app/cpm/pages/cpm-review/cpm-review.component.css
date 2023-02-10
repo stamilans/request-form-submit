@@ -3,6 +3,15 @@
     color: #fff;
 }
 
+.btn-back{
+    background-color: white;
+    color: #0cbb4f;
+    border-color: #0cbb4f;
+}
+.btn-back:hover{
+    background-color: #f8f8f8;
+}
+
 .btn{
     width: 150px;
     height: 40px;
@@ -12,7 +21,7 @@
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.btn-area .btn-success{
+.btn-area .btn-success,.btn-area .btn-print{
     float: right;;
 }
 .review-field-group{
@@ -32,4 +41,10 @@
     background-color: #f9f9f9;
     text-align: start;
     padding: 10px 30px;
+}
+
+@media print {
+    .btn-area ,.heading,.page-title{
+        display: none;
+    }
 }

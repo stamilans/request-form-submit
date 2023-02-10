@@ -6,7 +6,8 @@ import { HomeComponent } from './home/home.component';
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'home/cpm', redirectTo: '/cpm-page1', pathMatch: 'full'},
+  { path: 'home/cpm', redirectTo: '/cpm-page1', pathMatch: 'full' },
+  { path: 'home/reqmon-dsb', redirectTo: 'reqmon-dsb', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 

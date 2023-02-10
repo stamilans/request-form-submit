@@ -23,10 +23,13 @@ textarea{
     height: 100px;
 }
 .btn-cancel{
-    background-color: brown;
-    color: #fff;
+    background-color: white;
+    color: #0cbb4f;
+    border-color: #0cbb4f;
 }
-
+.btn-cancel:hover{
+    background-color: #f8f8f8;
+}
 .btn{
     width: 150px;
     height: 40px;
@@ -35,6 +38,6 @@ textarea{
     width: 50%;
     margin-bottom: 30px;
 }
-.btn-area .btn-cancel{
+.btn-area .btn-success{
     float: right;;
 }

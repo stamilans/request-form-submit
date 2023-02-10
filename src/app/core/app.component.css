@@ -11,7 +11,10 @@
   width: 100vw;
   z-index: 999;
 }
-
+.h-group{
+  width: 80%;
+  height: 100%;
+}
 header .green-bar {
   background-color: #038203;
   height: 20px;
@@ -29,10 +32,19 @@ header .green-bar {
 .header .container {
   height: 100%;
 }
+.d-flex{
+  display: flex!important;
+}
+.align-items-center {
+  align-items: center!important;
+}
+.flex-fill {
+  flex: 1 1 auto!important;
+}
 
 .logo {
   left: 15px;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 15px;
   margin-top: -21px;
@@ -48,7 +60,13 @@ header .green-bar {
   height: 43px;
   height: 43px;
 }
-
+.h-right{
+    position: relative;
+    right: 15px;
+    top: 0;
+    height: 100%;
+    text-align: right;
+}
 .contentarea {
   flex: 1 0 auto;
   margin-top: 70px;
@@ -60,7 +78,7 @@ header .green-bar {
   display: flex;
 }
 .router{
-  width: 80%;
+  width: 70%;
 }
 
 footer {
@@ -73,6 +91,8 @@ footer {
 
 .container {
   padding: .5rem;
-  max-width: 1000px;
   margin: auto;
+}
+.justify-content-end{
+  justify-content: space-evenly;
 }

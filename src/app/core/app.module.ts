@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 import { CpmModule } from '../cpm/base/cpm.module';
 import { HomeComponent } from './home/home.component';
+import { ReqMonitorModule } from '../req-monitor/req-monitor.module';
 
 
 
@@ -15,6 +16,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReqMonitorModule,
     CpmModule,
     AppRoutingModule,
   ],

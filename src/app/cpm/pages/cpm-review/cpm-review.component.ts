@@ -11,7 +11,6 @@ import { CpmConfig } from '../cpm-page1/cpm-page1.config';
   styleUrls: ['./cpm-review.component.css']
 })
 export class CpmReviewComponent {
-
   cpmRequestInfo: CpmRequestInfo;
 
   constructor(
@@ -34,4 +33,7 @@ export class CpmReviewComponent {
     this.router.navigate(["cpm-page1"])
   }
 
+  print(){
+    window.print();
+  }
 }

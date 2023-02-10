@@ -1,16 +1,20 @@
 <div class="app-wrapper">
   <header class="header">
     <div class="nav-primary">
-      <div class="container">
-        <div class="logo">
+      <div class="h-group container d-flex">
+        <div class="logo d-flex flex-fill align-items-center">
           <img alt="TD Canada Trust" src="assets/images/logo.png" (click)="home()">
+        </div>
+        <div _ngcontent-pstnc-app-c40="" class="d-flex align-items-center justify-content-center"><!----><!----></div>
+        <div _ngcontent-pstnc-app-c40="" class="d-flex flex-fill justify-content-end align-items-center">
+              <a (click)="requestMonitor()"><b>Request Monitor ></b></a>
         </div>
       </div>
     </div>
   </header>
-  
-  <div role="main" class="contentarea Site-content">
-    
+
+  <div role="main" class="contentarea Site-content ">
+
     <div class="router">
       <router-outlet></router-outlet>
     </div>
@@ -18,10 +22,6 @@
   </div>
 
   <footer>
-      <div>-</div>
+    <div>-</div>
   </footer>
 </div>
-
-
-
-

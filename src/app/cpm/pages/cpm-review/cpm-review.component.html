@@ -1,8 +1,8 @@
-<h1>CPM Deal Structure Tracker</h1>
+<h1 class="page-title">CPM Deal Structure Tracker</h1>
 <br>
 <div class="container">
     <div class="no-style" style="margin-left: 4px">
-            <h2>Review and Print</h2>
+            <h2 class="heading">Review and Print</h2>
             <div class="review-field-group">
                 <div class="lbl">Creditlink </div>
                 <div class="value">{{cpmRequestInfo.creditLink}}</div>
@@ -64,7 +64,8 @@
 
         <div class="btn-area">
             
-            <button type="submit" class="btn btn-print" (click)="back()">Back</button>
+            <button type="submit" class="btn btn-back" (click)="back()">Back</button>
+            <button type="submit" class="btn btn-print" (click)="print()">Print</button>
             <button type="submit" class="btn btn-success" 
                 (click)="submit()">Submit</button>
         </div>
