@@ -96,3 +96,6 @@ footer {
 .justify-content-end{
   justify-content: space-evenly;
 }
+.req-mon-link a{
+  color:#008a00 ;
+}

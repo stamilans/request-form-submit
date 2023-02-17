@@ -8,10 +8,12 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReqMonDashboardConfig } from './req-mon-dashboard/req-mon-dashboard.config';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReqMonitorHomeComponent } from './req-monitor-home/req-monitor-home.component'; 
 @NgModule({
   declarations: [
     ReqMonDashboardComponent,
+    ReqMonitorHomeComponent,
   ],
   imports: [
     CommonModule,

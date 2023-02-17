@@ -12,6 +12,6 @@ export class AppComponent {
     this.router.navigate(['/home'])
   }
   requestMonitor(){
-    this.router.navigate(['/reqmon-dsb'])
+    this.router.navigate(['/reqmon'])
   }
 }
